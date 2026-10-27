@@ -39,7 +39,6 @@ GitHub Pages kann selbst keine E-Mails versenden. Zwei Möglichkeiten:
 - `karriere.html`: Der Text nennt noch «Lehrbeginn Sommer 2026». Aktualisieren.
 - `news.html`: Die Beiträge haben nur Titel. Texte und Fotos aus dem alten Auftritt ergänzen.
 - `unternehmen.html`: Vornamen bei J. Schlegel und M. Mgborukwe ergänzen (im Screenshot nicht lesbar). Links zu den Verbänden prüfen (SES, swissgee und weitere).
-- Logo: `assets/img/logo.svg` ist ein Stand-in. Originallogo mit gleichem Dateinamen einsetzen.
 - Texte auf der Startseite (zweiter Absatz) stammen aus einem angeschnittenen Screenshot. Bitte prüfen.
 
 ## Aufbau

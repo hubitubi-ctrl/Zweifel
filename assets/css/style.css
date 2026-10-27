@@ -5,8 +5,8 @@
 @font-face{font-family:"Source Sans 3";src:url(../fonts/source-sans-3-latin-wght-normal.woff2) format("woff2");font-weight:200 900;font-style:normal;font-display:swap}
 
 :root{
-  --orange:#FF7F00;
-  --orange-ink:#B35400;      /* Orange für Text auf Weiss (Kontrast) */
+  --orange:#EE8A33;      /* Logo-Orange */
+  --orange-ink:#8F4A10;      /* Orange für Text auf Weiss (Kontrast) */
   --ink:#12171F;
   --graphite:#46505C;
   --mist:#F2F4F6;
@@ -49,7 +49,7 @@ ul{margin:0;padding:0;list-style:none}
 .site-header{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:1px solid var(--line)}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:84px}
 .logo{display:block;flex:none}
-.logo img{display:block;height:58px;width:auto}
+.logo img{display:block;height:64px;width:auto}
 .nav ul{display:flex;gap:clamp(14px,2.2vw,34px)}
 .nav a{display:block;padding:10px 2px;font:500 1rem var(--font-head);color:var(--ink);text-decoration:none;border-bottom:3px solid transparent}
 .nav a:hover{border-bottom-color:var(--line)}
@@ -88,8 +88,8 @@ ul{margin:0;padding:0;list-style:none}
 /* ---------- Buttons ---------- */
 .btn{display:inline-flex;align-items:center;gap:.5em;padding:.8em 1.4em;font:600 1rem var(--font-head);text-decoration:none;border:2px solid var(--ink);color:var(--ink);background:transparent;cursor:pointer;transition:background .15s,color .15s}
 .btn:hover{background:var(--ink);color:#fff}
-.btn--primary{background:var(--orange);border-color:var(--orange)}
-.btn--primary:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn--primary{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn--primary:hover{background:var(--orange);border-color:var(--orange);color:var(--ink)}
 .btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 
 /* ---------- Startseite ---------- */
@@ -126,13 +126,12 @@ ul{margin:0;padding:0;list-style:none}
 .news-teaser .date{font:600 1rem var(--font-head);color:var(--orange-ink)}
 @media (max-width:760px){.news-teaser{grid-template-columns:minmax(0,1fr)}}
 
-.cta{background:var(--orange);color:var(--ink)}
+.cta{background:var(--ink);color:#fff}
 .cta .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
 .cta h2{max-width:20ch}
-.cta .btn{border-color:var(--ink)}
-.cta .btn--primary{background:var(--ink);border-color:var(--ink);color:#fff}
-.cta .btn--primary:hover{background:#fff;color:var(--ink);border-color:#fff}
-.cta .btn:not(.btn--primary):hover{background:#fff;color:var(--ink);border-color:#fff}
+.cta .btn{border-color:#fff;color:#fff}
+.cta .btn--primary{background:var(--orange);border-color:var(--orange);color:var(--ink)}
+.cta .btn--primary:hover,.cta .btn:not(.btn--primary):hover{background:#fff;color:var(--ink);border-color:#fff}
 
 /* ---------- Unterseiten ---------- */
 .page-head{padding-block:clamp(36px,6vw,72px) clamp(24px,4vw,40px)}
@@ -243,17 +242,17 @@ ul{margin:0;padding:0;list-style:none}
 .site-footer a{color:var(--ink);text-decoration:none}
 .site-footer a:hover{color:var(--orange-ink);text-decoration:underline}
 .site-footer address{font-style:normal}
-.site-footer .logo img{height:64px}
+.site-footer .logo img{height:72px}
 .legal-links{margin-top:14px}
 @media (max-width:760px){.site-footer .grid{grid-template-columns:minmax(0,1fr)}}
 
 /* ---------- Schnellkontakt ---------- */
 .quick{position:fixed;right:max(0px,env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%);z-index:40;display:grid;gap:2px}
-.quick a{display:grid;place-items:center;width:52px;height:52px;background:var(--orange);color:var(--ink)}
-.quick a:hover{background:var(--ink);color:#fff}
+.quick a{display:grid;place-items:center;width:52px;height:52px;background:var(--ink);color:#fff}
+.quick a:hover{background:var(--orange);color:var(--ink)}
 .quick svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 @media (max-width:700px){
-  .quick{top:auto;bottom:0;left:0;right:0;transform:none;grid-template-columns:repeat(3,1fr);padding-bottom:env(safe-area-inset-bottom,0px);background:var(--orange)}
+  .quick{top:auto;bottom:0;left:0;right:0;transform:none;grid-template-columns:repeat(3,1fr);padding-bottom:env(safe-area-inset-bottom,0px);background:var(--ink)}
   .quick a{width:auto;height:52px}
   body{padding-bottom:calc(52px + env(safe-area-inset-bottom,0px))}
 }

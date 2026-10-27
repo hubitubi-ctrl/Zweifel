@@ -8,7 +8,7 @@ Alle Dateien mit **genau diesem Namen** in den angegebenen Ordner legen. Bis ein
 
 | Datei | Pixel | Verwendung |
 |---|---|---|
-| `assets/img/logo.svg` | 270 × 101 (Seitenverhältnis ca. 2,7 : 1) | Logo in Kopf- und Fusszeile. Aktuell eine Stand-in-Wortmarke, bitte durch das Originallogo ersetzen (SVG oder PNG) |
+| `assets/img/logo.png` | 1200 × 429 | Firmenlogo (Original, bereits eingebaut) |
 | `assets/img/favicon.svg` | 64 × 64 | Symbol im Browser-Tab |
 
 ## Startseite
